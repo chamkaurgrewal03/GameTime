@@ -1,0 +1,117 @@
+.container {
+	background-color: #eef2f6;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 25px;
+}
+.page-title {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.round-corners {
+	border-radius: 5px;
+}
+button.button {
+    min-width: 120px;
+    text-transform: uppercase;
+}
+.court-wrap {
+    margin: 40px 0;
+    text-align: center;
+}
+.valign-parent {
+	position: relative;
+}
+.valign {
+    left: calc(50% - 60px);
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.points_sec {
+    background-color: #fff;
+    padding: 5px;
+    &.scoretime {
+    margin-top: 25px;
+    font-weight: 14px;
+	}
+}
+
+span{
+	&.data-col {
+	    width: 14%;
+	    display: inline-block;
+	    font-size: 13px;
+	    padding-right: 0.28%;
+	    text-align: center;
+	    text-transform: uppercase;
+	}
+	&.play-by-play-col{
+		width: 75%;
+	}
+	&.actions{
+		width: 11%;
+		text-transform: capitalize;
+		cursor: pointer;
+		i{
+			margin-right: 2px;
+			font-size: 12px;
+		}
+	}
+	&.see_more{
+		font-size: 14px;
+	}
+
+}
+.row {
+    padding: 3px 0;
+    &.align_center{
+    	text-align: center;
+    }
+}
+.row:nth-child(2n) {
+    background-color: #eee;
+}
+.row.header {
+    border-top: 2px solid #ccc;
+    border-bottom: 1px solid #666;
+}
+.buttonwrap{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 320px;
+    padding: 20px;
+    button{
+    	&:nth-child(odd){
+    		float: left;
+    	}
+    	&:nth-child(even){
+    		float: right;
+    	}
+    	&:nth-child(1),&:nth-child(2){
+    		margin-bottom: 40px;
+    	}
+    	
+    }
+}
+.button_end_game{
+	text-align: center;
+	display: block;
+	margin-bottom: 30px;
+	button{
+		&:first-child{
+			margin-right: 20px;
+		}
+		
+	}
+}
