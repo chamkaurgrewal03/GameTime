@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
 	entry: [
 		'script!jquery/dist/jquery.min.js',
-		'script!foundation-sites/dist/foundation.min.js',
+		'script!foundation-sites/dist/js/foundation.min.js',
 		'./app/app.jsx'
 	],
 	externals: {
@@ -25,11 +25,19 @@ module.exports = {
 			Main : 'app/components/Main.jsx',
 			applicationStyles: 'app/styles/app.scss',
 			Court : 'app/components/court.jsx',
-			Score : 'app/components/Score.jsx',
+			ScoreMain : 'app/components/ScoreMain.jsx',
 			RecordPlay: 'app/components/recordplay.jsx',
 			OnCourt: 'app/components/oncourt.jsx',
+			OffCourt: 'app/components/OffCourt.jsx',
 			ScoreTime: 'app/components/scoretime.jsx',
-			EndGame: 'app/components/endgame.jsx'
+			EndButtons: 'app/components/EndButtons.jsx',
+			EndGameModal: 'app/components/EndGameModal.jsx',
+			FinalResult: 'app/components/FinalResult.jsx',
+			AreaSelect: 'app/components/AreaSelect.jsx',
+			AST: 'app/components/AST.jsx',
+			Defence: 'app/components/Defence.jsx',
+			Foul: 'app/components/Foul.jsx',
+			Score: 'app/components/Score.jsx',
 		},
 		extensions: ['','.js','.jsx']
 	},

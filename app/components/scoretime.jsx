@@ -13,7 +13,6 @@ var ScoreTime = (props) => {
 					<span className="data-col">17:26</span>
 					<span className="data-col play-by-play-col">3 Point Make</span>
 					<span className="data-col actions"><i className="fa fa-pencil" aria-hidden="true"></i>edit</span>
-					
 				</div>
 				<div className="row align_center">
 					<span className="see_more">see more...</span>	

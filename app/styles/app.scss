@@ -4,6 +4,20 @@
 	margin: 0 auto;
 	padding: 25px;
 }
+.red {
+    background-color: #d0021b;
+}
+.red:hover, .red:focus {
+    background-color: #FF3826;
+}
+.align-right {
+    float: right;
+}
+#end-game-modal button.button {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
 .page-title {
     font-size: 16px;
     margin: 0;
@@ -16,13 +30,17 @@
 .round-corners {
 	border-radius: 5px;
 }
-button.button {
-    min-width: 120px;
-    text-transform: uppercase;
-}
 .court-wrap {
     margin: 40px 0;
     text-align: center;
+
+    .buttonwrap {
+        .button {
+            line-height: 20px;
+            width: 120px;
+            text-transform: uppercase;
+        }
+    }
 }
 .valign-parent {
 	position: relative;
@@ -84,6 +102,33 @@ span{
     border-top: 2px solid #ccc;
     border-bottom: 1px solid #666;
 }
+div#end-game-modal.reveal {
+    height: auto;
+    min-height: 1px;
+}
+.heading-wrap {
+    max-width: 330px;
+    margin: 20px auto;
+}
+.heading-wrap h1 {
+    color: #1c87bd;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.col-50 {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    color: #1c87bd;
+}
+p.bg-white {
+    color: #9b9b9b;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+}
 .buttonwrap{
 	position: absolute;
     top: 50%;
@@ -91,7 +136,7 @@ span{
     transform: translate(-50% , -50%);
     width: 320px;
     padding: 20px;
-    button{
+    a{
     	&:nth-child(odd){
     		float: left;
     	}
@@ -114,4 +159,47 @@ span{
 		}
 		
 	}
+}
+.space-top-10 {
+    margin-top: 10px;
+}
+a {
+    &.button {
+        &.round-corners {
+            &.space-top-10 {
+                display: block;
+                width: 130px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+.title-wrap {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+
+    h4 {
+        color: #1779ba;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    span.cancel-action {
+        bottom: 0;
+        color: #1779ba;
+        line-height: 35px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
 }

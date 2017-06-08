@@ -3,17 +3,17 @@ var Court = require('Court');
 var ScoreMain = require('ScoreMain');
 var ScoreTime =require('ScoreTime');
 
-var Score = React.createClass({
+var AST = React.createClass({
 	render: function() {
 		var {id} = this.props.params;
 		return (
 			<div className="container">
 				<h2 className="page-title">Steph Curry</h2>
 				<div className="title-wrap">
-					<h4>Score</h4>
+					<h4>AST</h4>
 					<span className="cancel-action">cancel</span>
 				</div>
-				<Court courtButtonProp={'Score'+id} scorebtn='Score' />
+				<Court courtButtonProp='AST' />
 				<ScoreMain />
 				<ScoreTime />
 			</div>
@@ -21,4 +21,4 @@ var Score = React.createClass({
 	}
 });
 
-module.exports = Score;
+module.exports = AST;

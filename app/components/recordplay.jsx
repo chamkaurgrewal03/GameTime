@@ -1,13 +1,15 @@
 var React = require('react');
+import { Link } from 'react-router';
 
 var RecordPlay = (props) => {
 	return (
-
+		<div className="overlay">
 		<div className="buttonwrap">
-			<button type="button" className="button round-corners ">Score</button>
-			<button type="button" className="button round-corners ">Defence</button>
-			<button type="button" className="button round-corners ">AST/TO</button>
-			<button type="button" className="button round-corners ">FOUL</button>
+			<Link to="/AreaSelect/Score" type="button" className="button alert round-corners ">Score</Link>
+			<Link to="/AreaSelect/Defence" type="button" className="button alert round-corners ">Defence</Link>
+			<Link to="/AreaSelect/AST" type="button" className="button alert round-corners ">AST/TO</Link>
+			<Link to="/AreaSelect/FOUL" type="button" className="button alert round-corners ">FOUL</Link>
+		</div>
 		</div>
 	)
 };
