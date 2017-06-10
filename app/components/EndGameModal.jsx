@@ -18,7 +18,7 @@ var EndGameModal = React.createClass ({
 				<div>
 				<p>{message}</p>
 				<p>
-					<form action="/">
+					<form action="#/finalresult/end">
 					<button type="button" className="button round-corners" data-close="">Cancel</button>
 					<button type="submit" className="button red round-corners align-right" >Confirm</button>
 					</form>

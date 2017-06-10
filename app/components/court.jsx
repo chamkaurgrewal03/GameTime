@@ -24,7 +24,7 @@ var Court = React.createClass({
 		var setCourtButton=this.setCourtButton;
 		var {courtButtonProp,pagecall,scorebtn} = this.props;
 
-		function renderCourtButton () { 
+		function renderCourtButton () {
 			if(courtButtonProp != 'noButton') {
 				if(scorebtn == 'Score') {
 					return <OnCourt buttonType={courtButtonProp} _setCourtButton={setCourtButton}/>;

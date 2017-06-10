@@ -14,8 +14,8 @@ var OnCourt = React.createClass({
 				return (
 					<div className="overlay">
 					<div className="buttonwrap">
-						<Link to="/" type="button" className="button alert round-corners ">3PT MAKE</Link>
-						<Link to="/" type="button" className="button alert round-corners ">3PT MISS</Link>
+						<Link to="/ptmk3" type="button" className="button alert round-corners ">3PT MAKE</Link>
+						<Link to="/ptms3" type="button" className="button alert round-corners ">3PT MISS</Link>
 					</div>
 					</div>
 				);
@@ -54,8 +54,8 @@ var OnCourt = React.createClass({
 				return (
 					<div className="overlay">
 					<div className="buttonwrap">
-						<Link to="/" type="button" className="button alert round-corners ">ASSIST</Link>
-						<Link to="/" type="button" className="button alert round-corners ">TURNOVER</Link>
+						<Link to="/ASSIST" type="button" className="button alert round-corners ">ASSIST</Link>
+						<Link to="/turnover" type="button" className="button alert round-corners ">TURNOVER</Link>
 					</div>
 					</div>
 				);
@@ -63,10 +63,10 @@ var OnCourt = React.createClass({
 				return (
 					<div className="overlay">
 					<div className="buttonwrap">
-						<Link to="/" type="button" className="button alert round-corners ">OFFENSIVE REBOUND</Link>
-						<Link to="/" type="button" className="button alert round-corners ">DEFENSIVE REBOUND</Link>
-						<Link to="/" type="button" className="button alert round-corners ">STEAL</Link>
-						<Link to="/" type="button" className="button alert round-corners ">BLOCK</Link>
+						<Link to="/offrebound" type="button" className="button alert round-corners ">OFFENSIVE REBOUND</Link>
+						<Link to="/defrebound" type="button" className="button alert round-corners ">DEFENSIVE REBOUND</Link>
+						<Link to="/steal" type="button" className="button alert round-corners ">STEAL</Link>
+						<Link to="/block" type="button" className="button alert round-corners ">BLOCK</Link>
 					</div>
 					</div>
 				);

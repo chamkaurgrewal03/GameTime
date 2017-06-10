@@ -19,10 +19,10 @@ require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
 	<Router history={hashHistory}>
-		<Route path="/" component={Main}>
-		</Route>
+		<Route path="/" component={Main} />
+		<Route path="/:scoreUpdate" component={Main} />
 		<Route path="AreaSelect/:button" component={AreaSelect}/>
-		<Route path="finalresult" component={FinalResult}/>
+		<Route path="finalresult/end" component={FinalResult}/>
 		<Route path="Score/:id" component={Score}/>
 		<Route path="AST/:id" component={AST}/>
 		<Route path="Defence/:id" component={Defence}/>
