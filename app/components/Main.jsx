@@ -12,7 +12,7 @@ var Main = React.createClass({
 					<h2 className="page-title">Steph Curry</h2>
 					<Court />
 					<ScoreMain scoreUpdate={scoreUpdate} />
-					<ScoreTime />
+					<ScoreTime scoreUpdate={scoreUpdate} />
 					{/*{props.children}*/}
 				</div>
 			</div>
